@@ -14,14 +14,6 @@
 #define TEST(x)
 #endif
 
-int is_valid(const lstm* lstm)
-{
-    if ( lstm->num_hidden_layers <= 0 ) {
-        return 0;
-    }
-    return 1;
-}
-
 static real sigmoid(const real x)
 {
     return 1.0 / (1.0 + exp(-x));

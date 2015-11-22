@@ -48,7 +48,8 @@ typedef struct slstm
     MEMBER(weights_memory_to_forget_gate);
 } lstm;
 
-int is_valid(const lstm* lstm);
+/* Check README.md for documentation on these functions. */
+
 void propagate(lstm* restrict lstm, const real* restrict input, real* restrict output);
 
 lstm* allocate_lstm( size_t num_inputs, size_t num_outputs, const size_t* num_hiddens, size_t num_hidden_layers );
