@@ -6,12 +6,12 @@ networks for C for Unix platforms. Works at least on Linux.
 
 The neural network architecture currently supported by this library is:
 
-    * An input layer.
+  * An input layer.
 
-    * At least one hidden layer; each hidden layer must contain a multiple of 4
-      LSTM nodes.
+  * At least one hidden layer; each hidden layer must contain a multiple of 4
+    LSTM nodes.
 
-    * An output layer.
+  * An output layer.
 
 All layers are fully connected to their respective next layer. Additionally,
 the last hidden layer is fully connected to first hidden layer. If there is
