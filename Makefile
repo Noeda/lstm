@@ -6,11 +6,11 @@ CC := gcc
 
 .PHONY: debug release clean
 
+release: CFLAGS += -O3
+release: $(LIB)
+
 debug: CFLAGS += -g3
 debug: $(LIB)
-
-release: CFLAGS += -O2
-release: $(LIB)
 
 install: $(LIB)
 	install liblstm.so /usr/local/lib/liblstm.so
